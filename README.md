@@ -13,7 +13,10 @@
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText txt;
+    private EditText cnpj;
+    private EditText cpf;
+    private EditText data;
+    private EditText hora;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +24,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        txt = (EditText) findViewById(R.id.mascara);
-        Mask.insereMascara(Mask.TYPE_MASK.CNPJ, txt);
+        this.cnpj = (EditText) findViewById(R.id.cnpj);
+        Mask.insereMascara(Mask.TYPE_MASK.CNPJ, this.cnpj);
+
+        this.cpf = (EditText) findViewById(R.id.cpf);
+        Mask.insereMascara(Mask.TYPE_MASK.CPF, this.cpf);
+
+        this.data = (EditText) findViewById(R.id.data);
+        Mask.insereMascara(Mask.TYPE_MASK.DATA, this.data);
+
+        this.hora = (EditText) findViewById(R.id.hora);
+        Mask.insereMascara(Mask.TYPE_MASK.HORA_C, this.hora);
 
     }
 }
 
 ```
 
-
 ##### Foto
+
+
 
