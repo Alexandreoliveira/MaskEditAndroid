@@ -43,5 +43,5 @@ public class MainActivity extends AppCompatActivity {
 
 ##### Foto
 
-
+![Exemplo](https://github.com/Alexandreoliveira/MaskEditAndroid/blob/master/Screenshot_1499693089.png)
 
